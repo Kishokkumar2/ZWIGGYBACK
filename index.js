@@ -16,6 +16,8 @@ const corsconfig={
 
 
 }
+app.use(cors(corsconfig))
+app.options("",cors(corsconfig))
 require('dotenv').config();
 
 const fooddata = require('./Schemas/Foodschema'); 
